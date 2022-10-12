@@ -1,4 +1,4 @@
-module kitchen
+module food_order
 
 go 1.19
 

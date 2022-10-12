@@ -3,14 +3,14 @@ package item
 var OrderList Queue
 
 type Queue struct {
-	Elements []Dh_order_post
+	Elements []Cl_order_post
 }
 
-func (ol *Queue) Enqueue(order Dh_order_post) {
+func (ol *Queue) Enqueue(order Cl_order_post) {
 	ol.Elements = append(ol.Elements, order)
 }
 
-func (ol *Queue) Dequeue() *Dh_order_post {
+func (ol *Queue) Dequeue() *Cl_order_post {
 	if ol.IsEmpty() {
 		return nil
 	}
